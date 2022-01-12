@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='../fullcalendar/lib/main.css' rel='stylesheet' />
+    <script src='../fullcalendar/lib/main.js'></script>
+
+    <title>Contact</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js" integrity="sha512-LGXaggshOkD/at6PFNcp2V2unf9LzFq6LE+sChH7ceMTDP0g2kn6Vxwgg7wkPP7AAtX+lmPqPdxB47A0Nz0cMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        
+   
+</head>
+
+<link rel="stylesheet" type="text/css" href="../CSS/style.css"/>
+
+<body>
+
+    <div class="pageWrapper">
+
+      <div class="navbarWrapper">
+      
+          <li class="navbar"><a href="./index.html">Home</a></li>
+          <li class="navbar"><a href="./about.html">About</a></li>
+          <li class="navbar"><a href="./contact.html">Contact</a></li>
+        
+      </div>
+      
+      <div class="formWrapper">
+      
+      <fieldset>
+      
+          <legend>Your contact infomation</legend>
+      
+          <form method="POST" name="theform" id="form">
+              <label for="fname">First name:</label>
+              <input type="text" id="fname" name="fname" onKeyup="checkform()" onmouseleave="checkform()"/><br><br>
+              <label for="lname">Last name:</label>
+              <input type="text" id="lname" name="lname" onKeyup="checkform()" onmouseleave="checkform()"/><br><br>
+              <label for="phone">Phone Number:</label>
+              <input type="tel" id="phone" name="phone" onKeyup="checkform()" onmouseleave="checkform()"/><br><br>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" onKeyup="checkform()" onmouseleave="checkform()"/><br><br>
+              <label for="date">Date for future meeting:</label>
+              <input type="date" id="date" name="date" onKeyup="checkform()" onmouseleave="checkform()"/><br><br>
+              <label for="comments">Additional notes:</label>
+              <textarea id="comments"></textarea>
+              <input type="submit" id="submitButton" disabled="disabled" value="Submit">
+          </form>
+      
+      </fieldset>
+
+    </div>
+
+</div> 
+     
+    
+
+  <button id="myBtn">Open Calendar</button>  
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+  
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div id='calendar'></div>
+    </div>
+  
+  </div>         
+
+</body>
+<script src="../JS/contact.js"></script>
+</html>

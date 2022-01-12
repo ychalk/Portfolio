@@ -1,0 +1,236 @@
+.pageWrapper{
+  display:flex;
+  flex-direction: column;
+}
+.navbarWrapper {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: pink;
+  margin-bottom: 10px;
+  width:100%;
+}
+.navbar {
+  display: inline;
+  float: left;
+  margin-right: 10px;    
+}
+
+a {
+  display: block;
+  padding: 8px;
+  background-color: lightblue;
+}
+
+
+a:link {
+  text-decoration: none;
+  color: red;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+a:visited {
+  color: green;
+}
+
+a:hover {
+  background-color: blue;
+}
+
+.image {
+  width: 25%;
+  height: 25%;
+  margin-bottom: 10px;
+  border-radius: 50%;
+}
+
+.linkWrapper{
+    display: flex;
+    flex-direction: column;
+  }
+
+.myLinks{
+  width: 12%;
+  margin-bottom: 8px;
+}
+
+.aboutmeWrapper{
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutme {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  width:100%;
+}
+
+.mapGallery{
+  margin: 10px;
+}    
+
+.map{
+  display:none;
+}
+
+.active{
+  display:block;
+}
+
+.btns{
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn{
+  background-color: blueviolet;
+  color: white;
+  font-size: 20px;
+  border-radius: 25px;
+  border-color: transparent;
+  padding: 5px 20px;
+  cursor: pointer;
+}
+
+.prev{
+  margin-right: 15px;
+}
+
+.btn:disabled{
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  font-family: Verdana, sans-serif;
+}
+
+/* Month header */
+.month {
+  padding: 70px 25px;
+  width: 100%;
+  background: #1abc9c;
+  text-align: center;
+}
+
+/* Month list */
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+/* Previous button inside month header */
+.month .prev1 {
+  float: left;
+  padding-top: 10px;
+}
+
+/* Next button */
+.month .next1 {
+  float: right;
+  padding-top: 10px;
+}
+
+/* Weekdays (Mon-Sun) */
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color:#ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+/* Days (1-31) */
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:12px;
+  color: #777;
+}
+
+/* Highlight the "current" day */
+.days li .active {
+  padding: 5px;
+  background: #1abc9c;
+  color: white !important
+}
+
+.container{
+  height: 100%;
+  width: 100%;
+}
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  height:80%
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.calendar{
+  height: 100%;
+  width: 100%;
+}
