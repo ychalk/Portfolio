@@ -22,36 +22,43 @@
     <div class="pageWrapper">
 
       <div class="navbarWrapper">
-      
+
+          <div class="navbarImage"><img class="image" src="https://avatars.githubusercontent.com/u/88944885?v=4"/></div>
           <li class="navbar"><a href="./index.html">Home</a></li>
           <li class="navbar"><a href="./about.html">About</a></li>
-          <li class="navbar"><a href="./contact.html">Contact</a></li>
+          <li class="navbarContact"><a href="./contact.html">Contact</a></li>
         
       </div>
       
       <div class="formWrapper">
       
-      <fieldset>
+      <div class="fieldset">
       
-          <legend>Your contact infomation</legend>
+          <p class="contact">Your contact infomation</p>
       
           <form method="POST" name="theform" id="form">
-              <label for="fname">First name:</label>
+            <div class="inputWrapper">
+              <label for="fname">First name<span>*</span></label>
               <input type="text" id="fname" name="fname" onKeyup="checkform()" onmouseleave="checkform()"/><br><br>
-              <label for="lname">Last name:</label>
+              <label for="lname">Last name<span>*</span></label>
               <input type="text" id="lname" name="lname" onKeyup="checkform()" onmouseleave="checkform()"/><br><br>
-              <label for="phone">Phone Number:</label>
+              <label for="phone">Phone Number<span>*</span></label>
               <input type="tel" id="phone" name="phone" onKeyup="checkform()" onmouseleave="checkform()"/><br><br>
-              <label for="email">Email:</label>
+              <label for="email">Email<span>*</span></label>            
               <input type="email" id="email" name="email" onKeyup="checkform()" onmouseleave="checkform()"/><br><br>
-              <label for="date">Date for future meeting:</label>
-              <input type="date" id="date" name="date" onKeyup="checkform()" onmouseleave="checkform()"/><br><br>
-              <label for="comments">Additional notes:</label>
-              <textarea id="comments"></textarea>
-              <input type="submit" id="submitButton" disabled="disabled" value="Submit">
+              <label for="date">Date for future meeting<span>*</span></label>
+              <input type="date" class="date" id="date" name="date" onKeyup="checkform()" onmouseleave="checkform()"/><br><br>
+            </div>
+            <div class="commentsWrapper">
+              <label class="comments" for="comments">Additional notes  </label>
+              <textarea id="comments" class="comments" rows="5"></textarea>
+            </div>
           </form>
+          <div class="submitWrapper">
+            <input type="submit" id="submitButton" class="submitButton" disabled="disabled" value="Submit">
+          </div>
       
-      </fieldset>
+        </div>
 
     </div>
 
@@ -59,7 +66,7 @@
      
     
 
-  <button id="myBtn">Open Calendar</button>  
+  <button id="myBtn" class="myBtn">Open Calendar</button>  
   <!-- The Modal -->
   <div id="myModal" class="modal">
   
