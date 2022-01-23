@@ -23,10 +23,9 @@
 
       <div class="navbarWrapper">
 
-          <div class="navbarImage"><img class="image" src="https://avatars.githubusercontent.com/u/88944885?v=4"/></div>
           <li class="navbar"><a href="./index.html">Home</a></li>
           <li class="navbar"><a href="./about.html">About</a></li>
-          <li class="navbarContact"><a href="./contact.html">Contact</a></li>
+          <li class="navbar"><a href="./contact.html">Contact</a></li>
         
       </div>
       
@@ -47,26 +46,29 @@
               <label for="email">Email<span>*</span></label>            
               <input type="email" id="email" name="email" onKeyup="checkform()" onmouseleave="checkform()"/><br><br>
               <label for="date">Date for future meeting<span>*</span></label>
-              <input type="date" class="date" id="date" name="date" onKeyup="checkform()" onmouseleave="checkform()"/><br><br>
+              <input type="date" class="appointment" id="date" name="date" onKeyup="checkform()" onmouseleave="checkform()"/><br><br>
             </div>
             <div class="commentsWrapper">
               <label class="comments" for="comments">Additional notes  </label>
               <textarea id="comments" class="comments" rows="5"></textarea>
             </div>
           </form>
-          <div class="submitWrapper">
-            <input type="submit" id="submitButton" class="submitButton" disabled="disabled" value="Submit">
-          </div>
-      
+              
         </div>
 
     </div>
 
 </div> 
-     
-    
-
-  <button id="myBtn" class="myBtn">Open Calendar</button>  
+ <div class="buttonsWrapper">    
+  <!-- <div class="openWrapper"> -->
+    <button id="myBtn" class="myBtn">Open Calendar</button>  
+  <!-- </div> -->
+  <!-- <div class="submitWrapper"> -->
+    <button id="submitButton" class="submitButton" disabled="disabled">
+      Submit
+    </button>  
+  <!-- </div> -->
+ </div>   
   <!-- The Modal -->
   <div id="myModal" class="modal">
   

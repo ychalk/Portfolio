@@ -1,54 +1,69 @@
 
 body {
   background-color: #f4f0ec;
+  font-family: Lato;
+
 }
 
 .pageWrapper{
   display:flex;
   flex-direction: column;
 }
+
 .navbarWrapper {
+  font-family: Lato;
   list-style-type: none;
   margin: 0;
   padding: 0;
   background-color: white;
   margin-bottom: 10px;
   width:100%;
-  float: none;
   display: inline-block;
+  float: left;
   text-align: center;
 }
 .navbar {
-  display: inline;
-  float: left;
-  border-right: 2px solid #787878;
+  font-family: Lato;
   margin:10px;
-  padding-right: 20px;  
-  display: block;
+  padding: 10px 20px;  
+  display: inline-block;
+  float: center;
   text-align: center;
 }
 
-.navbarContact{
-  display: inline;
-  float: left;
-  margin:10px;
-  padding-right: 20px;  
-  display: block;
+.titleWrapper{
+  margin:auto;
   text-align: center;
 }
 
-.navbarImage{
-  display: inline;
-  float: left;
-  margin:10px;
-  padding-right: 20px;  
-  display: block;
-  text-align: left;
+.titleName{
+  font-size: xx-large;
 }
+
+.job{
+  font-size: larger;
+}
+
+.linkWrapper, .summary{
+  width:60%;
+  margin:auto;
+  box-shadow: 1px 1px 2px #C8C8C8, 0 0 25px #C8C8C8, 0 0 5px #C8C8C8;
+  padding: 20px;
+  padding-bottom: 25px;
+  margin-top: 40px;
+}
+
+.videoWrapper{
+  width:60%;
+  margin:auto;
+  padding: 20px;
+  margin-top: 40px;
+  text-align: center;
+}
+
 a:link {
   text-decoration: none;
-  color: red;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: black;
 }
 
 
@@ -57,7 +72,7 @@ a:visited {
 }
 
 a:hover {
-  background-color: blue;
+  background-color: lightgray;
 }
 
 .image {
@@ -66,10 +81,7 @@ a:hover {
   border-radius: 50%;
 }
 
-.linkWrapper{
-    display: flex;
-    flex-direction: column;
-  }
+
 
 .myLinks{
   width: 12%;
@@ -82,19 +94,72 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: Lato;
 }
 
 .aboutme {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  width:57%;
+  margin-bottom: 50px;
+}
+
+.title{
+  font-size: larger;
+  font-weight: bold;
+  border-bottom: #666 solid;
+  margin:15px 0 15px 0;
+}
+
+.maths{
+  display:flex;
+  flex-direction: column;
+}
+
+.education, .experience{
+  box-shadow: 1px 1px 2px #C8C8C8, 0 0 25px #C8C8C8, 0 0 5px #C8C8C8;
+  padding: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-family: Lato;
+}
+
+.edu, .hasmo, .eva, .college{
+  display: flex;
+  flex-direction: row;
+  padding-right:0;
+}
+
+.college{
+  margin-top: 7px;
+  padding-bottom: 7px;
+}
+
+.teacher, .date{
+  float:left;
   width:100%;
+}
+
+.school, .company{
+  width:100%;
+}
+
+.area, .program{
+  float:right;
+  text-align: right;
+  width:100%;
+}
+
+.skillsLearnt{
+padding: 10px 0 15px 10px;
 }
 
 .mapGallery{
   margin: 10px;
+  margin-top: 0;
 }    
 
 .map{
   display:none;
+  box-shadow: 1px 1px 2px #C8C8C8, 0 0 25px #C8C8C8, 0 0 5px #C8C8C8;
 }
 
 .active{
@@ -129,29 +194,33 @@ a:hover {
 }
 
 .formWrapper{
+  float: center;
   text-align: right;
   background-color: #f4f0ec;
   width: 100%;
+  font-family: Lato;
 }
 
 .fieldset{
-  width:100%;
+  width: 60%;
+  box-shadow: 1px 1px 2px #C8C8C8, 0 0 25px #C8C8C8, 0 0 5px #C8C8C8;
+  margin:auto;
+  margin: 30px 0 0 20%;
+  padding:40px;
 }
 
 .inputWrapper{
-  padding-right: 40%;
+  padding-right: 34%;
 }
 
 input{
   height:30px;
-  border: none;  
+  border: none; 
+  border-radius: 10px;
 }
 
-textarea{
-  border: none;
-}
 
-.date{
+.appointment{
   padding-left: 28px;
 }
 
@@ -160,7 +229,7 @@ ul {
 }
 
 body {
-  font-family: Verdana, sans-serif;
+  font-family: lato;
 }
 
 span{
@@ -168,11 +237,14 @@ span{
 }
 
 .contact{
-  padding-bottom: 10px;
-  border-bottom: 2px solid gray;
-  padding-right: 40%;
-  text-align: left;
-  margin: 5px;
+  text-align: center;
+  font-size:x-large;
+  border: darkgray solid;
+  border-radius: 10px;
+  width: fit-content;
+  padding: 10px;
+  margin:auto;
+  margin-bottom: 40px;
 }
 
 label{
@@ -182,41 +254,47 @@ label{
 
 .commentsWrapper{
   vertical-align: middle;
-  padding-right: 40%;
+  padding-right: 34%;
 }
 
 textarea{
   vertical-align: top;
+  border-radius: 10px;
+  border:none;
 }
 
-.submitWrapper{
-  border-top: 2px solid gray;
-  margin:10px;
-  width:100%;
+.buttonsWrapper{
+  display:flex;
+  flex-direction: row;
+  width:80%;
+  margin:auto;
+  padding: 10px;
+  overflow: hidden;
+  clear:both;
+}
 
+
+.myBtn, .submitButton{
+  padding:10px;
+  border-radius: 10px;
+  background-color: gray;
+  margin: 10px 0;
+  color: white;
+  font-family: Lato;
 }
 
 .submitButton{
-  font-size: large;
-  padding:10px;
-  border-radius: 10px;
-  margin: 10px;
+  margin-left:64%;
 }
-
-.btn:disabled{
-  background-color: gray;
+.myBtn{
+  margin-left:13%;
+}
+.submitButton:disabled{
+  background-color: lightgray;
   cursor: not-allowed;
 }
 
 
-.myBtn{
-  padding:10px;
-  border-radius: 10px;
-  background-color: gray;
-  margin: 10px;
-  color: white;
-  font-size: larger;
-}
 /* Month header */
 .month {
   padding: 70px 25px;
