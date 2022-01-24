@@ -37,6 +37,7 @@ body {
 }
 
 .titleName{
+  margin-top: 40px;
   font-size: xx-large;
 }
 
@@ -149,7 +150,7 @@ a:hover {
 }
 
 .skillsLearnt{
-padding: 10px 0 15px 10px;
+padding: 10px 40px 15px 40px;
 }
 
 .mapGallery{
@@ -195,17 +196,19 @@ padding: 10px 0 15px 10px;
 
 .formWrapper{
   float: center;
-  text-align: right;
+  align-items: center;
   background-color: #f4f0ec;
   width: 100%;
   font-family: Lato;
 }
 
 .fieldset{
+  float: center;
+  text-align: right;
   width: 60%;
   box-shadow: 1px 1px 2px #C8C8C8, 0 0 25px #C8C8C8, 0 0 5px #C8C8C8;
   margin:auto;
-  margin: 30px 0 0 20%;
+  margin-top: 40px;
   padding:40px;
 }
 
@@ -266,11 +269,13 @@ textarea{
 .buttonsWrapper{
   display:flex;
   flex-direction: row;
-  width:80%;
   margin:auto;
   padding: 10px;
-  overflow: hidden;
-  clear:both;
+  width: 65%;
+  margin:auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -280,15 +285,8 @@ textarea{
   background-color: gray;
   margin: 10px 0;
   color: white;
-  font-family: Lato;
 }
 
-.submitButton{
-  margin-left:64%;
-}
-.myBtn{
-  margin-left:13%;
-}
 .submitButton:disabled{
   background-color: lightgray;
   cursor: not-allowed;
